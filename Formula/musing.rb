@@ -1,5 +1,5 @@
 class Musing < Formula
-  desc "Project-agnostic CLI for managing multi-service development stacks"
+  desc "CLI for managing multi-service development stacks"
   homepage "https://github.com/stevengregory/musing-cli"
   url "https://github.com/stevengregory/musing-cli/archive/refs/tags/v0.2.0.tar.gz"
   sha256 "9a162858917650a2c3d6f8892d0bcb3ce7652f18f8a53b709b4aa8ed6eb4fec6"
