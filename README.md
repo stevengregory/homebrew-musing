@@ -12,7 +12,7 @@ brew install musing
 ## Usage
 
 ```bash
-musing --version          # Check version
+musing version            # Check version
 musing monitor            # Live monitoring dashboard
 musing dev                # Manage development stack
 musing deploy news prod   # Deploy MongoDB collections
