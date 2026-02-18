@@ -12,10 +12,12 @@ brew install musing
 ## Usage
 
 ```bash
-musing --version       # Check version
-musing monitor         # Live monitoring dashboard
-musing dev             # Manage development stack
-musing deploy          # Deploy MongoDB collections
+musing --version          # Check version
+musing monitor            # Live monitoring dashboard
+musing dev                # Manage development stack
+musing deploy news prod   # Deploy MongoDB collections
+musing tunnel             # Manage SSH tunnel
+musing ssh                # Interactive SSH session
 ```
 
 ## Documentation
@@ -25,8 +27,7 @@ For full documentation, see the [musing-cli repository](https://github.com/steve
 ## Updating
 
 ```bash
-brew update
-brew upgrade musing
+brew update && brew upgrade musing
 ```
 
 ## Uninstall
