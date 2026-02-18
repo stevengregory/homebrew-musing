@@ -11,7 +11,7 @@ class Musing < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/stevengregory/musing-cli/releases/download/v0.7.0/musing-cli_0.7.0_darwin_amd64.tar.gz"
-      sha256 "133910678bcae2b697d542915888b2369816cb810de88e584a9c06d9943688a7"
+      sha256 "bed3350ea3bb77fb470df628360a27e816af17c9a911f57e6a1c5e9c096e1235"
 
       def install
         bin.install "musing"
@@ -19,7 +19,7 @@ class Musing < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/stevengregory/musing-cli/releases/download/v0.7.0/musing-cli_0.7.0_darwin_arm64.tar.gz"
-      sha256 "ec3623f4c06d08f2aedc13b7548c04cb71f07546d6db5f0959850836b0c9adcc"
+      sha256 "eb5fbc3c9a9965c7918f9a8eabdef53e92ec60d3f42bd08531b94ca72b03426b"
 
       def install
         bin.install "musing"
@@ -30,14 +30,14 @@ class Musing < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/stevengregory/musing-cli/releases/download/v0.7.0/musing-cli_0.7.0_linux_amd64.tar.gz"
-      sha256 "86c6114b78abe43852dc3139e62747a023a77ec07f43c1ca7d9ab3d427307702"
+      sha256 "4647588619f6cebfc9b1b6b14691865a77eb50778f95480e03752c7241670945"
       def install
         bin.install "musing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/stevengregory/musing-cli/releases/download/v0.7.0/musing-cli_0.7.0_linux_arm64.tar.gz"
-      sha256 "4549f96b82eeddb6a30e32eb24cdc270619da3931d4d5e236e34406a3f2ea621"
+      sha256 "827ef43ac22fa3ffce2d4b88dc94a7820ae75addd3f9e0817e7dae5314e91a19"
       def install
         bin.install "musing"
       end
