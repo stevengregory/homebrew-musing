@@ -5,21 +5,21 @@
 class Musing < Formula
   desc "CLI for managing multi-service development stacks"
   homepage "https://github.com/stevengregory/musing-cli"
-  version "0.8.4"
+  version "0.8.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.4/musing-cli_0.8.4_darwin_amd64.tar.gz"
-      sha256 "ec103b79e8ae284cd5ca25fe37ca909bafdcd0bb9e6490d49ab7ba71744bd5b2"
+      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.5/musing-cli_0.8.5_darwin_amd64.tar.gz"
+      sha256 "858eb96ca2cf710088cccb25cc99073433e9c4ab67be20f9af7826f6c2011800"
 
       define_method(:install) do
         bin.install "musing"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.4/musing-cli_0.8.4_darwin_arm64.tar.gz"
-      sha256 "adc46d53354937e99a8fd6d2274e888483377042cfac451f456fab5ed0bd5f79"
+      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.5/musing-cli_0.8.5_darwin_arm64.tar.gz"
+      sha256 "c4b1399acc3d4b7f06aee6d82cda19c246a4d503df02d0510f8ee3fc6264298a"
 
       define_method(:install) do
         bin.install "musing"
@@ -29,15 +29,15 @@ class Musing < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.4/musing-cli_0.8.4_linux_amd64.tar.gz"
-      sha256 "187e22682c60ab2f654cc331f595b8f141fbd03d1ef57824a7aac4516b41ae89"
+      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.5/musing-cli_0.8.5_linux_amd64.tar.gz"
+      sha256 "e130693dd37a3f2a13b4c9423ea64db3522900487d2b087e5edc56be1f54e31f"
       define_method(:install) do
         bin.install "musing"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.4/musing-cli_0.8.4_linux_arm64.tar.gz"
-      sha256 "f5f64ffdbb34385b5e9a5e5707818a9d38deaed7fceda05a7ef206a61ccdf8b7"
+      url "https://github.com/stevengregory/musing-cli/releases/download/v0.8.5/musing-cli_0.8.5_linux_arm64.tar.gz"
+      sha256 "ed9bdeb71edd5db34ad4e9839932e6eeeb0ce7bdbb51703b40277e09fd9a5dd0"
       define_method(:install) do
         bin.install "musing"
       end
